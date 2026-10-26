@@ -1,0 +1,34 @@
+<main>
+  <div class="wrap lesson-layout">
+    <aside class="toc-side" aria-label="Содержание урока">
+      <p class="toc-title">В этом уроке</p>
+      <nav class="toc" data-toc></nav>
+    </aside>
+
+    <article class="article">
+      <header class="lesson-head">
+        <p class="crumbs"><a href="/licoes/">Уроки</a> / Урок {{number}} · {{category}}</p>
+        <h1{{headingClass}}>{{title}}</h1>
+        <p class="full">{{fullTitle}}</p>
+        <p class="intro">{{intro}}</p>
+        <div class="toolbar">
+          <button class="btn btn-ghost btn-small js-ru" type="button" aria-pressed="false">Скрыть переводы</button>
+          <button class="btn btn-ghost btn-small js-done" data-lesson="{{slug}}" type="button" aria-pressed="false">Отметить как пройденный</button>
+        </div>
+        <details class="toc-mobile" style="margin-top:20px">
+          <summary>Содержание урока</summary>
+          <nav class="toc" data-toc></nav>
+        </details>
+      </header>
+
+{{body}}
+
+      <footer class="lesson-foot">
+        <div class="pager">
+          {{prevLink}}
+          {{nextLink}}
+        </div>
+      </footer>
+    </article>
+  </div>
+</main>

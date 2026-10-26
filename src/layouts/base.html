@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{pageTitle}}</title>
+  <meta name="description" content="{{pageDescription}}">
+  <meta property="og:title" content="{{pageTitle}}">
+  <meta property="og:description" content="{{pageDescription}}">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1E4FA0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,500..700;1,7..72,400..500&family=JetBrains+Mono:wght@500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css?v={{version}}">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="{{siteName}}, на главную">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="1" y="1" width="30" height="30" rx="3" fill="var(--accent)"/>
+        <path d="M16 4 C20 10 22 12 28 16 C22 20 20 22 16 28 C12 22 10 20 4 16 C10 12 12 10 16 4Z" fill="var(--surface)"/>
+        <circle cx="16" cy="16" r="3.2" fill="var(--accent)"/>
+      </svg>
+      <span class="brand-name">{{siteName}}</span>
+      <span class="brand-tag">PT-PT</span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="/" {{navHome}}>Главная</a>
+      <a href="/licoes/" {{navLessons}}>Уроки</a>
+    </nav>
+  </div>
+</header>
+
+{{content}}
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>{{siteName}} · {{siteTagline}}</span>
+    <span>Открытый проект. Исправления приветствуются.</span>
+  </div>
+</footer>
+<script src="/assets/js/site.js?v={{version}}"></script>
+</body>
+</html>

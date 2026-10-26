@@ -1,0 +1,50 @@
+---
+# Шаблон нового урока. Файлы, имя которых начинается с "_", на сайт не попадают.
+# Скопируйте этот файл, назовите, например, 04-ser-e-estar.html и заполните шапку.
+number: 4
+slug: ser-e-estar
+title: Ser e estar
+# heading: mono   ← раскомментируйте, если заголовок из аббревиатур (как PPC / PPS / PI)
+fullTitle: Os verbos ser e estar
+category: Грамматика
+level: A1
+description: Одна строка для списка уроков.
+intro: Пара предложений под заголовком урока: о чём он и зачем.
+---
+
+<!-- Каждый раздел — это <section class="block">. id станет якорем, data-toc-title — пунктом оглавления. -->
+<section class="block" id="osnova" data-toc-title="Основное">
+  <h2>Основное</h2>
+  <p>Обычный текст абзаца.</p>
+</section>
+
+<section class="block" id="exemplos" data-toc-title="Примеры">
+  <h2>Примеры</h2>
+  <!-- Пример: португальский (.pt) и перевод (.ru). Перевод прячется кнопкой «Скрыть переводы». -->
+  <ul class="examples">
+    <li class="ex"><p class="pt">Eu <b>sou</b> de Lisboa.</p><p class="ru">Я из Лиссабона.</p></li>
+  </ul>
+</section>
+
+<section class="block" id="notas" data-toc-title="На заметку">
+  <h2>На заметку</h2>
+  <div class="notes">
+    <!-- Три вида заметок: note-tip (совет), note-ptpt (отличие от бразильского), note-mistake (типичная ошибка) -->
+    <div class="note note-tip">
+      <p class="note-label">Совет</p>
+      <p>Текст заметки.</p>
+    </div>
+    <div class="note note-ptpt">
+      <p class="note-label">PT-PT vs PT-BR</p>
+      <p>Чем отличается от бразильского варианта.</p>
+    </div>
+    <div class="note note-mistake">
+      <p class="note-label">Типичная ошибка</p>
+      <p>Что часто путают.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Картинки кладите в папку img/<slug урока>/ и вставляйте так:
+<figure class="pic"><img src="/img/ser-e-estar/kartinka.webp" alt="Что на картинке" width="560" height="560" loading="lazy"></figure>
+Готовые примеры таблиц, карточек с картинками и схем — в файлах уроков 01–03. -->

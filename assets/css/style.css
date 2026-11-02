@@ -424,6 +424,8 @@ details.deep dd { margin: 0; }
 .prep-split { margin-top: 20px; border: 1px dashed var(--line-strong); border-radius: var(--radius); padding: 14px; background: color-mix(in srgb, var(--accent-soft) 45%, transparent); display: grid; gap: 12px; }
 .prep-split-title { font-weight: 600; }
 .prep-split-grid { display: grid; gap: 8px; }
+.split-3 { display: grid; gap: 8px; align-items: start; }
+@media (min-width: 800px) { .split-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .prep-arrow { margin: 0; font-size: 0.85rem; font-weight: 600; color: var(--accent); text-align: center; white-space: nowrap; }
 .prep-arrow .to-right { display: none; }
 @media (min-width: 700px) {

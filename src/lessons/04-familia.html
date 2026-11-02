@@ -1,0 +1,323 @@
+---
+number: 4
+slug: familia
+title: Семья
+fullTitle: A família
+category: Лексика
+level: A1
+description: Pai, avó, tio, prima, sogra и как один и тот же человек называется по-разному с разных сторон.
+intro: Как называются родственники по-португальски. В интерактивной схеме видно, что один и тот же человек может быть тётей, невесткой и снохой: всё зависит от того, с чьей стороны смотреть.
+---
+
+<section class="block" id="arvore" data-toc-title="Семья глазами «eu»">
+  <h2>Семья глазами «eu»</h2>
+  <p>Нажмите на любого человека: он станет «eu», и подписи у остальных покажут, кем они ему приходятся.</p>
+  <figure class="family" style="margin-top:16px">
+    <svg id="family-tree" viewBox="0 0 530 448" role="group" aria-label="Семейное дерево: три поколения, одиннадцать человек"></svg>
+    <div class="family-status">
+      <p id="family-who" aria-live="polite"></p>
+      <button class="btn btn-ghost btn-small" id="family-reset" type="button">Вернуть мальчика</button>
+    </div>
+    <div class="legend" aria-hidden="true">
+      <span class="key"><i class="k-blood"></i>кровные родственники</span>
+      <span class="key"><i class="k-law"></i>родня по браку</span>
+      <span><em>Курсивом</em> отмечены редкие слова, они в конце урока</span>
+      <span>«—» значит, что особого слова нет</span>
+    </div>
+  </figure>
+  <noscript><p>Для интерактивной схемы нужен JavaScript. Все слова есть в таблицах ниже.</p></noscript>
+</section>
+
+<section class="block" id="palavras" data-toc-title="Основные слова">
+  <h2>Основные слова</h2>
+  <div class="table-scroll">
+    <table class="vocab">
+      <thead><tr><th scope="col">Он</th><th scope="col">Она</th><th scope="col">Вместе</th><th scope="col">По-русски</th></tr></thead>
+      <tbody>
+        <tr><td class="w">pai</td><td class="w">mãe</td><td class="pl">os pais</td><td><span class="ru">отец, мать → родители</span></td></tr>
+        <tr><td class="w">filho</td><td class="w">filha</td><td class="pl">os filhos</td><td><span class="ru">сын, дочь → дети</span></td></tr>
+        <tr><td class="w">irmão</td><td class="w">irmã</td><td class="pl">os irmãos</td><td><span class="ru">брат, сестра → братья и сёстры</span></td></tr>
+        <tr><td class="w">avô</td><td class="w">avó</td><td class="pl">os avós</td><td><span class="ru">дедушка, бабушка → бабушки и дедушки</span></td></tr>
+        <tr><td class="w">neto</td><td class="w">neta</td><td class="pl">os netos</td><td><span class="ru">внук, внучка → внуки</span></td></tr>
+        <tr><td class="w">tio</td><td class="w">tia</td><td class="pl">os tios</td><td><span class="ru">дядя, тётя</span></td></tr>
+        <tr><td class="w">primo</td><td class="w">prima</td><td class="pl">os primos</td><td><span class="ru">двоюродный брат, двоюродная сестра</span></td></tr>
+        <tr><td class="w">sobrinho</td><td class="w">sobrinha</td><td class="pl">os sobrinhos</td><td><span class="ru">племянник, племянница</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block" id="casamento" data-toc-title="Родня по браку">
+  <h2>Родня по браку</h2>
+  <p>Здесь португальский проще русского. Нам нужно помнить, чья это сторона: свекровь или тёща, деверь или шурин. В португальском одно слово на обе стороны.</p>
+  <div class="table-scroll" style="margin-top:16px">
+    <table class="vocab">
+      <thead><tr><th scope="col">Португальский</th><th scope="col">Кто это</th><th scope="col">По-русски</th></tr></thead>
+      <tbody>
+        <tr><td class="w law">marido</td><td>муж</td><td><span class="ru">муж</span></td></tr>
+        <tr><td class="w law">mulher, esposa</td><td>жена</td><td><span class="ru">жена</span></td></tr>
+        <tr><td class="w law">sogro</td><td>отец мужа или жены</td><td><span class="ru">свёкор, тесть</span></td></tr>
+        <tr><td class="w law">sogra</td><td>мать мужа или жены</td><td><span class="ru">свекровь, тёща</span></td></tr>
+        <tr><td class="w law">genro</td><td>муж дочери</td><td><span class="ru">зять</span></td></tr>
+        <tr><td class="w law">nora</td><td>жена сына</td><td><span class="ru">невестка, сноха</span></td></tr>
+        <tr><td class="w law">cunhado</td><td>брат мужа или жены, муж сестры</td><td><span class="ru">деверь, шурин, зять</span></td></tr>
+        <tr><td class="w law">cunhada</td><td>сестра мужа или жены, жена брата</td><td><span class="ru">золовка, свояченица, невестка</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:12px">Во множественном числе: <b>os sogros</b> — родители мужа или жены, <b>os cunhados</b> — все свояки вместе.</p>
+</section>
+
+<section class="block" id="exemplos" data-toc-title="Примеры">
+  <h2>Примеры</h2>
+  <ul class="examples">
+    <li class="ex"><p class="pt">Os meus <b>pais</b> vivem no Porto.</p><p class="ru">Мои родители живут в Порту.</p></li>
+    <li class="ex"><p class="pt">A minha <b>mãe</b> tem dois <b>irmãos</b>.</p><p class="ru">У моей мамы два брата (или брат и сестра).</p></li>
+    <li class="ex"><p class="pt">Quantos <b>primos</b> tens?</p><p class="ru">Сколько у тебя двоюродных братьев и сестёр?</p></li>
+    <li class="ex"><p class="pt">O meu <b>avô</b> chama-se José.</p><p class="ru">Моего дедушку зовут Жозе.</p></li>
+    <li class="ex"><p class="pt">Os <b>avós</b> da Ana são de Braga.</p><p class="ru">Бабушка и дедушка Аны из Браги.</p></li>
+    <li class="ex"><p class="pt">A minha <b>sogra</b> é muito simpática.</p><p class="ru">Моя свекровь (тёща) очень милая.</p></li>
+    <li class="ex"><p class="pt">Esta é a mulher do meu irmão, a minha <b>cunhada</b>.</p><p class="ru">Это жена моего брата, моя невестка.</p></li>
+  </ul>
+</section>
+
+<section class="block" id="notas" data-toc-title="На заметку">
+  <h2>На заметку</h2>
+  <div class="notes">
+    <div class="note note-tip">
+      <p class="note-label">Мужской род объединяет</p>
+      <p>Если в группе есть и мужчины, и женщины, берётся мужской род множественного числа: <b>os pais</b> — это папа и мама. Поэтому <i>Tenho dois irmãos</i> может значить «у меня брат и сестра».</p>
+    </div>
+    <div class="note note-mistake">
+      <p class="note-label">Ложный друг</p>
+      <p><b>Os parentes</b> — это родственники вообще, а не родители. Родители — <b>os pais</b>.</p>
+    </div>
+    <div class="note note-tip">
+      <p class="note-label">Avó или avô</p>
+      <p>Слова различаются только гласной. В <b>avó</b> (бабушка) «о» открытое, как в слове «кот». В <b>avô</b> (дедушка) закрытое, ближе к «у». Бабушки и дедушки вместе: <b>os avós</b>, с тем же ударением, что у бабушки.</p>
+    </div>
+    <div class="note note-ptpt">
+      <p class="note-label">PT-PT vs PT-BR</p>
+      <p>В Португалии перед притяжательным местоимением ставят артикль: <i><b>o</b> meu pai, <b>a</b> minha mãe, <b>os</b> meus avós</i>. В Бразилии часто без него: <i>meu pai</i>. Про жену в разговоре чаще говорят <i>a minha mulher</i>, а <i>esposa</i> звучит официальнее. Детские «мама» и «папа»: <i>mamã, papá</i> (в Бразилии <i>mamãe, papai</i>).</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="mais" data-toc-title="Для любопытных">
+  <details class="deep">
+    <summary>Для любопытных: дальняя и сводная родня <small>необязательно</small></summary>
+    <dl>
+      <div><dt>bisavô / bisavó</dt><dd>прадедушка / прабабушка</dd></div>
+      <div><dt>bisneto / bisneta</dt><dd>правнук / правнучка</dd></div>
+      <div><dt>padrasto / madrasta</dt><dd>отчим / мачеха</dd></div>
+      <div><dt>enteado / enteada</dt><dd>пасынок / падчерица</dd></div>
+      <div><dt>meio-irmão / meia-irmã</dt><dd>брат / сестра только по одному из родителей</dd></div>
+      <div><dt>padrinho / madrinha</dt><dd>крёстный / крёстная</dd></div>
+      <div><dt>consogro / consogra</dt><dd>сват / сватья: родители мужа и родители жены друг для друга</dd></div>
+      <div><dt>concunhado / concunhada</dt><dd>муж или жена брата или сестры вашего супруга. В схеме это папа и жена маминого брата</dd></div>
+    </dl>
+  </details>
+</section>
+
+<script>
+(function () {
+  "use strict";
+  var svg = document.getElementById("family-tree");
+  if (!svg) return;
+  var NS = "http://www.w3.org/2000/svg";
+
+  // Люди. Подписи ru — кто это в схеме, глазами мальчика.
+  var people = {
+    avoPf: { g: "f", x: 55,  y: 70,  r: 28, parents: [], spouse: "avoPm", ru: "бабушка по папе",
+             look: { skin: "skin", hair: "cloud", hairColor: "hair-white", glasses: "bar", mouth: "flat" } },
+    avoPm: { g: "m", x: 155, y: 70,  r: 28, parents: [], spouse: "avoPf", ru: "дедушка по папе",
+             look: { skin: "skin", glasses: "arms", mouth: "flat" } },
+    avoMf: { g: "f", x: 235, y: 70,  r: 28, parents: [], spouse: "avoMm", ru: "бабушка по маме",
+             look: { skin: "skin-2", hair: "cloud", hairColor: "hair-dark", glasses: "bar", mouth: "flat" } },
+    avoMm: { g: "m", x: 335, y: 70,  r: 28, parents: [], spouse: "avoMf", ru: "дедушка по маме",
+             look: { skin: "skin-2", glasses: "arms", mouth: "flat" } },
+    pai:   { g: "m", x: 105, y: 230, r: 28, parents: ["avoPf", "avoPm"], spouse: "mae", ru: "папа",
+             look: { skin: "skin", glasses: "arms", mouth: "smile" } },
+    mae:   { g: "f", x: 225, y: 230, r: 28, parents: ["avoMf", "avoMm"], spouse: "pai", ru: "мама",
+             look: { skin: "skin", hair: "curly", hairColor: "hair-mid", mouth: "smile" } },
+    tio:   { g: "m", x: 345, y: 230, r: 28, parents: ["avoMf", "avoMm"], spouse: "tia", ru: "брат мамы",
+             look: { skin: "skin-2", hair: "short", hairColor: "hair-dark", glasses: "arms", mouth: "smile" } },
+    tia:   { g: "f", x: 465, y: 230, r: 28, parents: [], spouse: "tio", ru: "жена маминого брата",
+             look: { skin: "skin", hair: "long", hairColor: "hair-brown", mouth: "smile" } },
+    filho: { g: "m", x: 105, y: 385, r: 22, parents: ["pai", "mae"], ru: "мальчик",
+             look: { skin: "skin", hair: "kid", hairColor: "hair-light", mouth: "smile" } },
+    filha: { g: "f", x: 225, y: 385, r: 22, parents: ["pai", "mae"], ru: "девочка",
+             look: { skin: "skin", hair: "twotone", hairColor: "hair-light", mouth: "smile" } },
+    prima: { g: "f", x: 405, y: 385, r: 22, parents: ["tio", "tia"], ru: "дочь маминого брата",
+             look: { skin: "skin-2", hair: "pigtails", hairColor: "hair-brown", mouth: "smile" } }
+  };
+  var ids = Object.keys(people);
+
+  // ---------- родственные связи ----------
+  function parents(id) { return people[id].parents; }
+  function spouseOf(id) { return people[id].spouse ? [people[id].spouse] : []; }
+  function children(id) { return ids.filter(function (c) { return parents(c).indexOf(id) >= 0; }); }
+  function siblings(id) {
+    var p = parents(id);
+    if (!p.length) return [];
+    return ids.filter(function (o) { return o !== id && parents(o).some(function (x) { return p.indexOf(x) >= 0; }); });
+  }
+  function flat(list, fn) {
+    var out = [];
+    list.forEach(function (x) { fn(x).forEach(function (y) { if (out.indexOf(y) < 0) out.push(y); }); });
+    return out;
+  }
+
+  // Возвращает [слово, тип]: тип blood, law, extra (редкое слово) или none.
+  function relation(ego, t) {
+    var f = people[t].g === "f";
+    function w(m, fem, kind) { return [f ? fem : m, kind]; }
+    if (t === ego) return ["eu", "eu"];
+    var sp = spouseOf(ego), par = parents(ego), kids = children(ego), sib = siblings(ego);
+    if (sp.indexOf(t) >= 0) return w("marido", "mulher", "law");
+    if (par.indexOf(t) >= 0) return w("pai", "mãe", "blood");
+    if (kids.indexOf(t) >= 0) return w("filho", "filha", "blood");
+    if (sib.indexOf(t) >= 0) return w("irmão", "irmã", "blood");
+    if (flat(par, parents).indexOf(t) >= 0) return w("avô", "avó", "blood");
+    if (flat(kids, children).indexOf(t) >= 0) return w("neto", "neta", "blood");
+    var auntsUncles = flat(par, siblings);
+    if (auntsUncles.indexOf(t) >= 0 || flat(auntsUncles, spouseOf).indexOf(t) >= 0) return w("tio", "tia", "blood");
+    if (flat(sib, children).indexOf(t) >= 0 || flat(flat(sp, siblings), children).indexOf(t) >= 0) return w("sobrinho", "sobrinha", "blood");
+    if (flat(auntsUncles, children).indexOf(t) >= 0) return w("primo", "prima", "blood");
+    if (flat(sp, parents).indexOf(t) >= 0) return w("sogro", "sogra", "law");
+    if (flat(kids, spouseOf).indexOf(t) >= 0) return w("genro", "nora", "law");
+    if (flat(sp, siblings).indexOf(t) >= 0 || flat(sib, spouseOf).indexOf(t) >= 0) return w("cunhado", "cunhada", "law");
+    if (flat(flat(sp, siblings), spouseOf).indexOf(t) >= 0) return w("concunhado", "concunhada", "extra");
+    if (flat(flat(kids, spouseOf), parents).indexOf(t) >= 0) return w("consogro", "consogra", "extra");
+    return ["—", "none"];
+  }
+
+  // ---------- рисование ----------
+  function el(name, attrs, parent) {
+    var e = document.createElementNS(NS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function v(token) { return "var(--" + token + ")"; }
+  function n(x) { return Math.round(x * 10) / 10; }
+
+  function cloud(g, cx, cy, dist, rr, from, to, count, color, outline) {
+    for (var i = 0; i < count; i++) {
+      var a = (from + (to - from) * i / (count - 1)) * Math.PI / 180;
+      el("circle", { cx: n(cx + dist * Math.cos(a)), cy: n(cy + dist * Math.sin(a)), r: n(rr),
+        fill: v(color), stroke: outline ? v("hair-line") : "none", "stroke-width": 1.2 }, g);
+    }
+  }
+
+  function drawFace(g, p) {
+    var L = p.look, R = p.r, x = p.x, y = p.y, hc = L.hairColor;
+    // волосы сзади
+    if (L.hair === "cloud") cloud(g, x, y - 2, R * 0.92, R * 0.42, -205, 25, 10, hc, hc === "hair-white");
+    if (L.hair === "curly") cloud(g, x, y, R * 1.02, R * 0.5, -215, 35, 12, hc, false);
+    if (L.hair === "twotone") cloud(g, x, y, R * 1.0, R * 0.45, -210, 30, 10, "hair-white", true);
+    if (L.hair === "long") el("path", { d: "M" + n(x - R * 1.12) + " " + n(y + R * 0.95) + " L" + n(x - R * 1.12) + " " + n(y - R * 0.15) +
+      " A" + n(R * 1.12) + " " + n(R * 1.12) + " 0 0 1 " + n(x + R * 1.12) + " " + n(y - R * 0.15) + " L" + n(x + R * 1.12) + " " + n(y + R * 0.95) + " Z",
+      fill: v(hc) }, g);
+    if (L.hair === "pigtails") {
+      el("circle", { cx: n(x - R * 1.12), cy: n(y - R * 0.1), r: n(R * 0.42), fill: v(hc) }, g);
+      el("circle", { cx: n(x + R * 1.12), cy: n(y - R * 0.1), r: n(R * 0.42), fill: v(hc) }, g);
+    }
+    // лицо
+    el("circle", { cx: x, cy: y, r: R, fill: v(L.skin), stroke: v("face-ink"), "stroke-width": 1.4 }, g);
+    // волосы спереди
+    if (L.hair === "kid" || L.hair === "twotone") cloud(g, x, y - R * 0.12, R * 0.86, R * 0.4, -175, -5, 7, hc, false);
+    if (L.hair === "short" || L.hair === "long" || L.hair === "pigtails") {
+      el("path", { d: "M" + n(x - R) + " " + n(y - R * 0.1) + " A" + R + " " + R + " 0 0 1 " + n(x + R) + " " + n(y - R * 0.1) +
+        " Q" + x + " " + n(y - R * 0.62) + " " + n(x - R) + " " + n(y - R * 0.1) + " Z", fill: v(hc) }, g);
+    }
+    // глаза и очки
+    var ey = y - R * 0.12, ex = R * 0.34, er = R * 0.22;
+    [-1, 1].forEach(function (s) {
+      el("circle", { cx: n(x + s * ex), cy: n(ey), r: n(er), fill: v("lens"), stroke: v("face-ink"), "stroke-width": 1 }, g);
+      el("circle", { cx: n(x + s * ex + R * 0.05), cy: n(ey + R * 0.02), r: n(R * 0.085), fill: v("face-ink") }, g);
+    });
+    if (L.glasses) {
+      el("line", { x1: n(x - ex + er), y1: n(ey), x2: n(x + ex - er), y2: n(ey), stroke: v("face-ink"), "stroke-width": n(R * 0.1), "stroke-linecap": "round" }, g);
+    }
+    if (L.glasses === "arms") {
+      [-1, 1].forEach(function (s) {
+        el("line", { x1: n(x + s * (ex + er * 0.9)), y1: n(ey - er * 0.4), x2: n(x + s * R * 0.8), y2: n(y - R * 0.62),
+          stroke: v("face-ink"), "stroke-width": n(R * 0.1), "stroke-linecap": "round" }, g);
+      });
+    }
+    // рот
+    var d = L.mouth === "smile"
+      ? "M" + n(x - R * 0.3) + " " + n(y + R * 0.4) + " Q" + x + " " + n(y + R * 0.62) + " " + n(x + R * 0.3) + " " + n(y + R * 0.4)
+      : "M" + n(x - R * 0.32) + " " + n(y + R * 0.48) + " Q" + x + " " + n(y + R * 0.42) + " " + n(x + R * 0.32) + " " + n(y + R * 0.5);
+    el("path", { d: d, fill: "none", stroke: v("face-ink"), "stroke-width": 1.4, "stroke-linecap": "round" }, g);
+  }
+
+  // линии родства (рисуются первыми, под лицами)
+  var lines = el("g", { "aria-hidden": "true" }, svg);
+  function path(d, cls) { el("path", { d: d, "class": cls }, lines); }
+  function couple(a, b) {
+    var A = people[a], B = people[b];
+    path("M" + (A.x + A.r + 4) + " " + A.y + " H" + (B.x - B.r - 4), "wed");
+  }
+  function descent(a, b, kids, barY, endY) {
+    var mid = (people[a].x + people[b].x) / 2, y = people[a].y;
+    var xs = kids.map(function (k) { return people[k].x; });
+    var d = "M" + mid + " " + y + " V" + barY;
+    if (xs.length > 1) d += " M" + Math.min.apply(null, xs) + " " + barY + " H" + Math.max.apply(null, xs);
+    xs.forEach(function (kx) { d += " M" + kx + " " + barY + " V" + endY; });
+    path(d, "kin");
+  }
+  descent("avoPf", "avoPm", ["pai"], 165, 190);
+  descent("avoMf", "avoMm", ["mae", "tio"], 165, 182);
+  descent("pai", "mae", ["filho", "filha"], 330, 362);
+  descent("tio", "tia", ["prima"], 330, 362);
+  couple("avoPf", "avoPm");
+  couple("avoMf", "avoMm");
+  couple("pai", "mae");
+  couple("tio", "tia");
+
+  // люди
+  var nodes = {};
+  ids.forEach(function (id) {
+    var p = people[id];
+    var g = el("g", { "class": "person", tabindex: "0", role: "button", "data-id": id }, svg);
+    el("circle", { "class": "halo", cx: p.x, cy: p.y, r: p.r + 17 }, g);
+    drawFace(g, p);
+    var label = el("text", { "class": "lbl", x: p.x, y: p.y + p.r + 25 }, g);
+    nodes[id] = { g: g, label: label };
+  });
+
+  var who = document.getElementById("family-who");
+  var reset = document.getElementById("family-reset");
+  var DEFAULT = "filho";
+
+  function select(ego) {
+    ids.forEach(function (id) {
+      var r = relation(ego, id), node = nodes[id];
+      node.label.textContent = r[0];
+      node.label.setAttribute("class", "lbl " + r[1]);
+      node.g.classList.toggle("is-eu", id === ego);
+      node.g.setAttribute("aria-pressed", id === ego ? "true" : "false");
+      node.g.setAttribute("aria-label", people[id].ru + (id === ego ? ": сейчас это eu" : ": " + (r[1] === "none" ? "особого слова нет" : r[0])));
+    });
+    who.innerHTML = "Сейчас «eu» — <b></b>.";
+    who.querySelector("b").textContent = people[ego].ru;
+    reset.hidden = ego === DEFAULT;
+  }
+
+  svg.addEventListener("click", function (e) {
+    var g = e.target.closest(".person");
+    if (g) select(g.getAttribute("data-id"));
+  });
+  svg.addEventListener("keydown", function (e) {
+    var g = e.target.closest && e.target.closest(".person");
+    if (g && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); select(g.getAttribute("data-id")); }
+  });
+  reset.addEventListener("click", function () { select(DEFAULT); });
+  select(DEFAULT);
+
+  // для проверки в консоли: window.cadernoFamily.relation("pai", "tia")
+  window.cadernoFamily = { relation: relation, ids: ids };
+})();
+</script>

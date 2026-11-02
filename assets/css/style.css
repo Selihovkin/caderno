@@ -415,7 +415,23 @@ details.deep dd { margin: 0; }
 .pos .ru { font-size: 0.88rem; margin-top: 2px; }
 .pos u, .train u { text-decoration-color: var(--line-strong); text-underline-offset: 3px; }
 .badge-ok { color: var(--ok); background: color-mix(in srgb, var(--ok) 14%, transparent); }
-.badge-no { color: var(--muted); border: 1px dashed var(--line-strong); }
+.badge-no { color: var(--warn); background: var(--warn-soft); font-weight: 800; }
+.pos-col h3 .badge { font-size: 1.05rem; line-height: 1.4; min-width: 2rem; text-align: center; padding: 0 8px; }
+.pos .why { font-size: 0.85rem; color: var(--muted); font-style: italic; }
+.pos-name .badge { margin-left: 6px; text-transform: none; letter-spacing: 0; vertical-align: 1px; }
+.pos.is-same { border-left-color: var(--line-strong); }
+.pos.is-same .pt b { color: var(--ink); }
+.prep-split { margin-top: 20px; border: 1px dashed var(--line-strong); border-radius: var(--radius); padding: 14px; background: color-mix(in srgb, var(--accent-soft) 45%, transparent); display: grid; gap: 12px; }
+.prep-split-title { font-weight: 600; }
+.prep-split-grid { display: grid; gap: 8px; }
+.prep-arrow { margin: 0; font-size: 0.85rem; font-weight: 600; color: var(--accent); text-align: center; white-space: nowrap; }
+.prep-arrow .to-right { display: none; }
+@media (min-width: 700px) {
+  .prep-split-grid { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; }
+  .prep-arrow .to-right { display: inline; }
+  .prep-arrow .to-down { display: none; }
+}
+.formula { font-family: var(--f-mono); font-size: 0.72rem; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; margin-left: 4px; white-space: nowrap; vertical-align: 2px; }
 
 /* Урок: артикли */
 .trains { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }

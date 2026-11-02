@@ -15,6 +15,11 @@ const fs = require("fs");
 const path = require("path");
 const http = require("http");
 
+process.on("uncaughtException", (e) => {
+  console.error("Ошибка сборки: " + e.message);
+  process.exit(1);
+});
+
 const ROOT = __dirname;
 const SRC = path.join(ROOT, "src");
 const OUT = path.join(ROOT, "_site");
@@ -64,7 +69,10 @@ function parseFile(file) {
     if (!line.trim() || line.trim().startsWith("#")) continue;
     const i = line.indexOf(":");
     if (i < 0) throw new Error(`${file}: строка шапки без двоеточия: "${line}"`);
-    meta[line.slice(0, i).trim()] = line.slice(i + 1).trim();
+    const key = line.slice(0, i).trim();
+    const value = line.slice(i + 1).trim();
+    if (key === "related") (meta.related = meta.related || []).push(value);
+    else meta[key] = value;
   }
   return { meta, body: m[2] };
 }
@@ -103,6 +111,23 @@ for (const l of lessons) {
   slugs.add(l.slug);
 }
 
+// «Ещё по теме»: строки вида  related: slug#раздел | чем связан
+for (const l of lessons) {
+  l.relatedLinks = (l.related || []).map((line) => {
+    const bar = line.indexOf("|");
+    const target = (bar < 0 ? line : line.slice(0, bar)).trim();
+    const note = bar < 0 ? "" : line.slice(bar + 1).trim();
+    const [slug, anchor] = target.split("#");
+    const other = lessons.find((x) => x.slug === slug);
+    if (!other) throw new Error(`${l.file}: related ссылается на несуществующий урок "${slug}"`);
+    if (other.slug === l.slug) throw new Error(`${l.file}: related ссылается сам на себя`);
+    if (anchor && !other.body.includes(`id="${anchor}"`)) {
+      throw new Error(`${l.file}: в уроке "${slug}" нет раздела #${anchor}`);
+    }
+    return { lesson: other, anchor, note };
+  });
+}
+
 // ---------- кусочки разметки ----------
 
 function tags(category, level) {
@@ -129,6 +154,21 @@ function lessonList() {
 }
 
 const progress = `<span class="progress-note" data-progress data-total="${lessons.length}"></span>`;
+
+function relatedBlock(l) {
+  if (!l.relatedLinks.length) return "";
+  const cards = l.relatedLinks.map(({ lesson, anchor, note }) =>
+    `<a class="related-card" href="/licoes/${lesson.slug}/${anchor ? "#" + anchor : ""}">` +
+    `<span class="related-num">${lesson.number}</span>` +
+    `<span class="related-text"><b>${escapeHtml(lesson.title)}</b>${note ? `<small>${note}</small>` : ""}</span></a>`
+  );
+  return `<section class="related" aria-labelledby="related-title">
+          <h2 class="related-title" id="related-title">Ещё по теме</h2>
+          <div class="related-list">
+            ${cards.join("\n            ")}
+          </div>
+        </section>`;
+}
 
 function pagerLinks(i) {
   const prev = lessons[i - 1];
@@ -204,6 +244,7 @@ function build() {
         body: l.body.trim().split("\n").map((line) => (line ? "      " + line : line)).join("\n"),
         prevLink,
         nextLink,
+        related: relatedBlock(l),
       },
       `lessons/${l.file}`
     );

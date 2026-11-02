@@ -444,5 +444,37 @@ details.deep dd { margin: 0; }
 .car.art small { color: var(--on-accent); opacity: 0.85; }
 .trains .ru { font-size: 0.92rem; }
 
+/* Иллюстрация «артикль и глагол» */
+.artverb { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 16px 14px; display: grid; gap: 10px; }
+.artverb svg { width: 100%; height: auto; display: block; max-width: 620px; margin: 0 auto; }
+.artverb .av-ground { stroke: var(--line); stroke-width: 2; stroke-dasharray: 2 8; stroke-linecap: round; }
+.artverb .av-divider { stroke: var(--line); stroke-width: 1.5; stroke-dasharray: 4 6; }
+.artverb .av-verb { --c: var(--pi); --c-soft: var(--pi-soft); }
+.artverb .av-noun, .artverb .av-art { --c: var(--accent); --c-soft: var(--accent-soft); }
+.artverb .av-body { fill: var(--c-soft); stroke: var(--c); stroke-width: 3; }
+.artverb .av-art .av-body { fill: var(--accent); }
+.artverb .av-leg { stroke: var(--c); stroke-width: 4; stroke-linecap: round; }
+.artverb .av-foot { fill: var(--c); }
+.artverb .av-arm { fill: none; stroke: var(--c); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+.artverb .av-arm-gap { fill: none; stroke: var(--c-soft); stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; }
+.artverb .av-hand { fill: var(--c-soft); stroke: var(--c); stroke-width: 2.5; }
+.artverb .av-eye { fill: var(--lens); stroke: var(--face-ink); stroke-width: 1.5; }
+.artverb .av-pupil { fill: var(--face-ink); }
+.artverb .av-lid { fill: var(--c-soft); stroke: var(--face-ink); stroke-width: 1.5; stroke-linejoin: round; }
+.artverb .av-ink { fill: none; stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; }
+.artverb .av-happy { fill: none; stroke: var(--on-accent); stroke-width: 2.5; stroke-linecap: round; }
+.artverb .av-blush { fill: var(--warn); opacity: 0.22; }
+.artverb .av-word { font-family: var(--f-body); font-weight: 700; font-size: 26px; text-anchor: middle; fill: var(--c); }
+.artverb .av-art .av-word { fill: var(--on-accent); }
+.artverb .av-bubble { fill: var(--surface); stroke: var(--line-strong); stroke-width: 1.5; stroke-linejoin: round; }
+.artverb .av-say { font-family: var(--f-body); font-size: 18px; font-weight: 500; text-anchor: middle; fill: var(--ink); }
+.artverb .av-heart { fill: var(--warn); }
+.av-caps { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; text-align: center; }
+.av-caps > span { display: grid; gap: 2px; }
+.av-caps .pt { font-size: 1rem; font-weight: 500; }
+.av-caps span:first-child .pt b { color: var(--pi); }
+.av-caps span:last-child .pt b { color: var(--accent); }
+.av-caps small { font-size: 0.8rem; color: var(--muted); }
+
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.875rem; }
 .site-footer .wrap { padding-block: 24px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }

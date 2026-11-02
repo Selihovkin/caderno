@@ -487,5 +487,57 @@ details.deep dd { margin: 0; }
 .av-caps span:last-child .pt b { color: var(--accent); }
 .av-caps small { font-size: 0.8rem; color: var(--muted); }
 
+/* Разделы «без артикля» / «с артиклем» */
+.block.zone { padding: 20px; border-radius: 14px; border: 1px solid transparent; }
+@media (max-width: 520px) { .block.zone { padding: 14px 12px; } }
+.zone-no { background: color-mix(in srgb, var(--warn-soft) 70%, var(--surface)); border-color: color-mix(in srgb, var(--warn) 18%, transparent); }
+.zone-yes { background: color-mix(in srgb, var(--ok) 13%, var(--surface)); border-color: color-mix(in srgb, var(--ok) 25%, transparent); }
+.zone-title { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.zone-title .badge { font-family: var(--f-body); font-size: 0.85rem; padding: 3px 11px; }
+.zone .badge-no { font-weight: 700; }
+
+/* Иллюстрация «когда артикль не нужен» */
+.noart { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: grid; gap: 14px; }
+.noart-rule { font-weight: 600; text-wrap: balance; }
+.noart-grid { display: grid; gap: 12px; }
+@media (min-width: 600px) { .noart-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.na-panel { border: 1px solid var(--line); border-radius: 8px; padding: 10px 10px 12px; display: grid; gap: 6px; align-content: start; background: var(--bg); }
+.na-panel svg { width: 100%; height: auto; display: block; }
+.na-cap { display: grid; gap: 1px; text-align: center; }
+.na-cap .pt { font-weight: 500; }
+.na-cap .pt b { color: var(--accent); }
+.na-cap .ru { font-size: 0.85rem; }
+.noart .na-ground { stroke: var(--line-strong); stroke-width: 2; stroke-dasharray: 2 7; stroke-linecap: round; }
+.noart .na-box { fill: var(--surface); stroke: var(--ink); stroke-width: 2.5; }
+.noart .na-line { stroke: var(--ink); stroke-width: 2; stroke-linecap: round; }
+.noart .na-inside { fill: var(--accent-soft); }
+.noart .na-shelf { stroke: var(--line-strong); stroke-width: 2.5; }
+.noart .na-door { fill: var(--surface); stroke: var(--ink); stroke-width: 2.5; stroke-linejoin: round; }
+.noart .na-milk path { fill: var(--surface); stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; }
+.noart .na-milk rect { fill: var(--accent); }
+.noart .na-fly-path { fill: none; stroke: var(--muted); stroke-width: 1.2; stroke-dasharray: 2 4; }
+.noart .na-fly circle { fill: var(--ink); }
+.noart .na-wing { fill: var(--surface); stroke: var(--muted); stroke-width: 1; }
+.noart .na-bubble { fill: var(--surface); stroke: var(--line-strong); stroke-width: 1.5; stroke-linejoin: round; }
+.noart .na-say { font-family: var(--f-body); font-size: 17px; font-weight: 600; text-anchor: middle; fill: var(--ink); }
+.noart .na-man path, .noart .na-man line { fill: none; stroke: var(--ink); stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+.noart .na-man .na-ink { stroke: var(--face-ink); stroke-width: 2; }
+.noart .na-head, .noart .na-hand { fill: var(--skin); stroke: var(--face-ink); stroke-width: 2; }
+.noart .na-eye { fill: var(--lens); stroke: var(--face-ink); stroke-width: 1.2; }
+.noart .na-pupil { fill: var(--face-ink); }
+.noart .na-man .na-cap-hat { fill: var(--ppc); stroke: none; }
+.noart .na-counter { fill: var(--pi-soft); stroke: var(--pi); stroke-width: 2.5; }
+.noart .na-counter-top { stroke: var(--pi); stroke-width: 5; stroke-linecap: round; }
+.noart .na-cup { fill: var(--surface); stroke: var(--ink); stroke-width: 2.2; stroke-linejoin: round; }
+.noart .na-cup-h { fill: none; stroke: var(--ink); stroke-width: 2.2; }
+.noart .na-saucer { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
+.noart .na-steam { fill: none; stroke: var(--muted); stroke-width: 2; stroke-linecap: round; }
+.noart .na-paper { fill: var(--paper); stroke: var(--line-strong); stroke-width: 1.5; }
+.noart .na-list-h { font-family: var(--f-body); font-size: 15px; font-weight: 700; text-anchor: middle; fill: var(--face-ink); }
+.noart .na-item { font-family: var(--f-body); font-size: 17px; font-weight: 500; fill: var(--face-ink); }
+.noart .na-check { fill: none; stroke: var(--hair-line); stroke-width: 1.5; }
+.noart .na-tick { fill: none; stroke: var(--ok); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.noart .na-paper ~ .na-line { stroke: var(--hair-line); }
+
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.875rem; }
 .site-footer .wrap { padding-block: 24px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }

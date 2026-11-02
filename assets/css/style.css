@@ -317,6 +317,18 @@ table.contr { border-collapse: collapse; width: 100%; min-width: 22rem; font-var
 .contr .g { color: var(--line-strong); letter-spacing: -0.1em; }
 .contr tbody th { width: 1%; }
 .contr td { font-weight: 700; font-size: 1.08rem; color: var(--t); }
+.contr-title { font-family: var(--f-body); font-size: 1.05rem; font-weight: 600; margin: 24px 0 10px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.block > h2 + .contr-title { margin-top: 0; }
+.badge { font-size: 0.75rem; font-weight: 600; padding: 2px 9px; border-radius: 999px; }
+.badge-must { color: var(--accent); background: var(--accent-soft); }
+.badge-opt { color: var(--muted); border: 1px dashed var(--line-strong); }
+.contr tbody th small.how { display: block; font-size: 0.72rem; font-weight: 500; color: var(--muted); margin-top: 3px; }
+@media (max-width: 520px) { .contr th, .contr td { padding: 9px 7px; } .contr tbody th small.how { max-width: 4.2rem; line-height: 1.2; } }
+.contr td.nomerge { font-weight: 500; font-size: 0.95rem; color: var(--muted); background: var(--bg); font-style: italic; }
+.contr td.nomerge span { font-style: normal; font-size: 0.8rem; margin-left: 6px; }
+.ex .alt { display: block; font-size: 0.92rem; font-weight: 400; color: var(--muted); }
+.ex .alt b { color: var(--muted); text-decoration: none; }
+.ex.p-de, .ex.p-por, .ex.p-a, .ex.p-em { border-left: 3px solid var(--t); }
 .prep-chip { font-family: var(--f-mono); font-weight: 600; font-size: 0.85rem; color: var(--t); background: var(--t-soft); padding: 2px 8px; border-radius: 4px; }
 .prep-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 16px; }
 .prep-word { font-family: var(--f-mono); font-weight: 600; font-size: 2.2rem; line-height: 1; color: var(--t); }
